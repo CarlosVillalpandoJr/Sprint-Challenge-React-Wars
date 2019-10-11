@@ -13,13 +13,14 @@ const App = () => {
   useEffect(() => {
     axios
       .get(`https://swapi.co/api/people/`)
-      .then(res => setCharacterData(res.data))
+      .then(res => setCharacterData(res.data.results))
       .catch(error => (console.log('The data was not returned!', error)))
   }, [])
-
+  
   return (
     <div className="App">
       <h1 className="Header">React Wars</h1>
+      <StarWarsList characterArray={characterData} />
     </div>
   );
 }
