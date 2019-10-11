@@ -1,4 +1,6 @@
 import React from 'react';
+import StarWarsList from './components/StarWarsList';
+import axios from 'axios';
 import './App.css';
 
 const App = () => {
