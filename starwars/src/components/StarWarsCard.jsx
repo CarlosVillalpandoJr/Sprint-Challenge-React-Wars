@@ -20,4 +20,6 @@ border: 3px solid gold;
 border-radius: 25px;
 padding: 30px;
 margin: 25px;
+background: black;
+color: gold;
 `
